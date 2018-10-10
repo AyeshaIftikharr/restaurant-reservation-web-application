@@ -1,0 +1,12 @@
+// bootstrap dependencies
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/root";
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/grid";
+/**
+ * entire bootstrap was imported because we are using grid, forms from bootstrap 
+ * in the future only import those modules that are required by bootstrap.
+ **/
+ @import "~bootstrap/scss/bootstrap";
