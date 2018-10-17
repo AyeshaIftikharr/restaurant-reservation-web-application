@@ -1,3 +1,7 @@
+// The Roboto font will not be automatically loaded by Material-UI
+// Material ui documentation shows several ways to solve this
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 // bootstrap dependencies
 // @import "~bootstrap/scss/functions";
 // @import "~bootstrap/scss/variables";

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{204:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var u,a=(u=t(2))&&u.__esModule?u:{default:u};var d=function(){return a.default.createElement("div",null,"Pricing Page....")};n.default=d}}]);
