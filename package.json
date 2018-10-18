@@ -4,6 +4,13 @@
   "private": true,
   "author": "Ayesha Iftikhar",
   "license": "MIT",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "webpack-dev-server --mode development --config config/webpack.commons.config.js --open --hot --history-api-fallback",
+    "prestart:prod": "webpack --mode production --config config/webpack.production.config.js --env.NODE_ENV=production --progress",
+    "start:prod": "node server",
+    "lint-web": "eslint --debug src/"
+  },
   "dependencies": {
     "@material-ui/core": "^3.1.1",
     "@material-ui/icons": "^3.0.1",
@@ -14,14 +21,8 @@
     "react-dom": "^16.5.2",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1",
-    "react-transition-group": "^2.5.0"
-  },
-  "scripts": {
-    "start": "npm run start:dev",
-    "start:dev": "webpack-dev-server --mode development --config config/webpack.commons.config.js --open --hot --history-api-fallback",
-    "prestart:prod": "webpack --mode production --config config/webpack.production.config.js --env.NODE_ENV=production --progress",
-    "start:prod": "node server",
-    "lint-web": "eslint --debug src/"
+    "react-transition-group": "^2.5.0",
+    "styled-components": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.54",
