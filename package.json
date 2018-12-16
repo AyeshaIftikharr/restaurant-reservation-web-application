@@ -9,7 +9,9 @@
     "start:dev": "webpack-dev-server --mode development --config config/webpack.commons.config.js --open --hot --history-api-fallback",
     "prestart:prod": "webpack --mode production --config config/webpack.production.config.js --env.NODE_ENV=production --progress",
     "start:prod": "node server",
-    "lint-web": "eslint --debug src/"
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix",
+    "prettier": "prettier --write src/**/*.js"
   },
   "dependencies": {
     "@material-ui/core": "^3.1.1",
@@ -27,6 +29,12 @@
   "devDependencies": {
     "@babel/core": "7.0.0-beta.54",
     "@babel/plugin-proposal-class-properties": "7.0.0-beta.54",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/polyfill": "7.0.0-beta.56",

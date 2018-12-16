@@ -7,6 +7,8 @@ import AppBar from '@material-ui/core/AppBar';
 import AppBarContent from '../common/AppBarContent';
 // Routes
 import Routes from './Routes';
+// Commons
+import Footer from '../common/Footer';
 
 const styles = () => ({
   root: {
@@ -23,6 +25,7 @@ const MainLayout = ({ classes }) => {
       <main>
         <Route render={props => <Routes {...props} />} />
       </main>
+      <Footer />
     </div>
   );
 };

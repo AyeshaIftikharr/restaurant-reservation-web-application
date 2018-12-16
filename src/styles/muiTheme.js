@@ -46,6 +46,7 @@ export default {
     fontWeightLight: 300,
     fontWeightMedium: 500,
     fontWeightRegular: 400,
+    useNextVariants: true,
     button: {
       fontFamily: 'Roboto", "Helvetica", "Arial", sans-serif',
       fontSize: 14,
