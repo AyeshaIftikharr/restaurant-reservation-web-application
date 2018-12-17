@@ -8,6 +8,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Loadable from 'react-loadable';
 import PageLoader from '../../common/PageLoader';
 
+// Do Code Splitting with lazy
+
 // Auth Pages
 const MenuPage = Loadable({
   loader: () => import('../menu/MenuPage'),
@@ -21,10 +23,10 @@ const ReservationPage = Loadable({
   loader: () => import('../reservation/ReservationPage'),
   loading: PageLoader,
 });
-const ContactPage = Loadable({
-  loader: () => import('../contact/ContactPage'),
-  loading: PageLoader,
-});
+// const ContactPage = Loadable({
+//   loader: () => import('../contact/ContactPage'),
+//   loading: PageLoader,
+// });
 const AboutPage = Loadable({
   loader: () => import('../about/AboutPage'),
   loading: PageLoader,
@@ -57,7 +59,7 @@ const Routes = ({ match, location }) => {
           <Route path={`${match.url}/pricing`} component={PricingPage} />
           <Route path={`${match.url}/reservation`} component={ReservationPage} />
           <Route path={`${match.url}/about`} component={AboutPage} />
-          <Route path={`${match.url}/contact`} component={ContactPage} />
+          {/* <Route path={`${match.url}/contact`} component={ContactPage} /> */}
           <Route component={NoMatchPage} />
         </Switch>
       </CSSTransition>
