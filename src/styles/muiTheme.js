@@ -80,21 +80,14 @@ export default {
       fontWeight: 500,
       lineHeight: '1.16667em',
     },
-    body1: {
-      color: 'rgba(0, 0, 0, 0.87)',
+    body2: {
+      color: 'rgba(0, 0, 0, 0.54)',
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontSize: '0.875rem',
       fontWeight: 400,
       lineHeight: '1.46429em',
     },
-    body2: {
-      color: 'rgba(0, 0, 0, 0.87)',
-      fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-      fontSize: '0.875rem',
-      fontWeight: 500,
-      lineHeight: '1.71429em',
-    },
-    display1: {
+    h4: {
       color: 'rgba(0, 0, 0, 0.54)',
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontSize: '2.125rem',

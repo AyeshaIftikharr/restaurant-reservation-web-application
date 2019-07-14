@@ -67,14 +67,14 @@ const AppBarContent = ({ classes }) => {
         >
           About
         </Typography>
-        <Typography
+        {/* <Typography
           component={NavLink}
           to="/auth/contact"
           variant="body2"
           className={classes.subheading}
         >
           Contact
-        </Typography>
+        </Typography> */}
       </div>
     </Toolbar>
   );
