@@ -27,7 +27,7 @@ const Footer = ({ classes }) => {
   return (
     <footer className={classes.container}>
       <p className={classes.p}>
-        &copy; Copyright, 2015{' '}
+        &copy; Copyright, 2018{' '}
         <a className={classes.a} href="http://mamaskitchen.com">
           MamasKitchen.{' '}
         </a>
